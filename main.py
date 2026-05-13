@@ -30,7 +30,7 @@ tweet_prompt = PromptTemplate(template = tweet_template, input_variables = ['num
 # --- Model Initialization ---
 # Initialize Google's Gemini 1.5 Flash model via LangChain's
 # ChatGoogleGenerativeAI wrapper. Flash is optimized for speed and efficiency.
-gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
+gemini_model = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
 
 # --- LangChain Pipeline ---
 # Chain the prompt template and model together using LangChain's pipe operator.
